@@ -1,15 +1,19 @@
-import React from 'react';
 import MainComponent from '../components/shared/MainComponent';
-import { useRouter} from 'next/router';
 
+import { useRouter } from 'next/router';
 
 const Home: React.FC = () => {
+  //TODO home page
+
   const router = useRouter();
+
   return (
     <MainComponent>
-      <button onClick= {()=> router.push('/Auth/Login')}>Login</button>
+      <h1>Home Page</h1>
+
+      <button onClick={() => router.push('/Auth/Login')}>Login</button>
     </MainComponent>
   )
 }
-  
-export default Home
+
+export default Home;
