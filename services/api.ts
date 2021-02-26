@@ -2,9 +2,11 @@ import axios from 'axios';
 import Cookie from 'js-cookie';
 import ApiData from '../dtos/ApiData';
 
+
 const api = axios.create({
-  baseURL: 'http://localhost/3000'
+  baseURL: 'http://localhost:3000'
 })
+
 
 api.interceptors.response.use(res => {
   if(res.headers['access-token']) {
@@ -33,3 +35,5 @@ api.interceptors.request.use(req => {
 })
 
 export default api;
+
+
