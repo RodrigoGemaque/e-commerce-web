@@ -1,3 +1,4 @@
+
 import api from './api';
 import User from '../dtos/User';
 
@@ -6,15 +7,14 @@ interface SignInData {
   password: string;
 }
 
-interface SignInResponse {
-  data: User
-}
-
 interface SignUpData {
   name: string;
   email: string;
   password: string;
   password_confirmation: string;
+}
+interface SignInResponse {
+  data: User
 }
 
 
@@ -37,6 +37,7 @@ const UsersService = {
       email,
       password
     }),
+
 }
 
 export default UsersService;
