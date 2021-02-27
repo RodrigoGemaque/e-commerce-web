@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '.././../../../styles/TitleAdminPanel.module.css';
+import styles from '../../../../styles/AdminTitle.module.css';
 
 interface TitleAndPath {
   title: String,
